@@ -1,0 +1,28 @@
+<article class="customer-card">
+  <div class="customer-card__media">
+    <% if customer.image.attached? %>
+      <%= image_tag customer.image, alt: "#{customer.full_name} profile image", class: "customer-card__image" %>
+    <% else %>
+      <div class="customer-card__image customer-card__image--placeholder">No Image</div>
+    <% end %>
+  </div>
+
+  <div class="customer-card__content">
+    <h2 class="customer-card__name"><%= customer.full_name %></h2>
+
+    <dl class="customer-card__details">
+      <div>
+        <dt>Phone</dt>
+        <dd><%= customer.phone_number.presence || "No phone number provided" %></dd>
+      </div>
+      <div>
+        <dt>Email</dt>
+        <dd><%= customer.email_address.presence || "No email provided" %></dd>
+      </div>
+      <div>
+        <dt>Notes</dt>
+        <dd><%= customer.notes.presence || "No notes provided" %></dd>
+      </div>
+    </dl>
+  </div>
+</article>

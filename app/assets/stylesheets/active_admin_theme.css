@@ -1,0 +1,174 @@
+:root {
+  --crm-admin-bg: #f3efe5;
+  --crm-admin-panel: #fffaf2;
+  --crm-admin-panel-strong: #ffffff;
+  --crm-admin-ink: #1f2933;
+  --crm-admin-muted: #52606d;
+  --crm-admin-line: #d9cfbc;
+  --crm-admin-accent: #9f4f2a;
+  --crm-admin-accent-dark: #6d2f15;
+  --crm-admin-shadow: 0 16px 36px rgba(73, 54, 36, 0.12);
+}
+
+body.active_admin {
+  background:
+    radial-gradient(circle at top left, rgba(159, 79, 42, 0.14), transparent 28%),
+    linear-gradient(180deg, #f8f4ea 0%, var(--crm-admin-bg) 100%);
+  color: var(--crm-admin-ink);
+}
+
+body.active_admin .header {
+  background: linear-gradient(135deg, var(--crm-admin-accent-dark), #8a3d1f);
+  border-bottom: 1px solid rgba(255, 247, 239, 0.16);
+  box-shadow: 0 10px 24px rgba(73, 54, 36, 0.18);
+}
+
+body.active_admin .header #site_title,
+body.active_admin .header #site_title a,
+body.active_admin .header .tabs > li > a,
+body.active_admin .header .utility_nav a,
+body.active_admin .header .utility_nav li {
+  color: #fff7ef;
+}
+
+body.active_admin .header .tabs > li:hover > a,
+body.active_admin .header .tabs > li.current > a,
+body.active_admin .header .utility_nav a:hover {
+  color: #ffe1cf;
+}
+
+body.active_admin .title_bar {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  padding-top: 1.5rem;
+}
+
+body.active_admin .title_bar #titlebar_left h2 {
+  color: var(--crm-admin-accent-dark);
+}
+
+body.active_admin #wrapper {
+  padding-top: 0;
+}
+
+body.active_admin #active_admin_content,
+body.active_admin .scopes,
+body.active_admin .panel,
+body.active_admin .index_as_table table,
+body.active_admin .attributes_table table,
+body.active_admin .sidebar_section,
+body.active_admin .blank_slate_container,
+body.active_admin .comments,
+body.active_admin .paginated_collection_contents {
+  background: var(--crm-admin-panel-strong);
+  border: 1px solid rgba(109, 47, 21, 0.12);
+  border-radius: 20px;
+  box-shadow: var(--crm-admin-shadow);
+}
+
+body.active_admin #active_admin_content {
+  padding: 1rem;
+}
+
+body.active_admin .panel > h3,
+body.active_admin .sidebar_section > h3,
+body.active_admin .attributes_table table th,
+body.active_admin table.index_table thead th {
+  background: linear-gradient(135deg, rgba(159, 79, 42, 0.12), rgba(109, 47, 21, 0.06));
+  color: var(--crm-admin-accent-dark);
+  border-bottom: 1px solid rgba(109, 47, 21, 0.12);
+}
+
+body.active_admin table.index_table th,
+body.active_admin table.index_table td,
+body.active_admin .attributes_table th,
+body.active_admin .attributes_table td {
+  border-color: rgba(109, 47, 21, 0.1);
+}
+
+body.active_admin table.index_table tbody tr:nth-child(even) {
+  background: rgba(243, 239, 229, 0.45);
+}
+
+body.active_admin table.index_table tbody tr:hover {
+  background: rgba(159, 79, 42, 0.08);
+}
+
+body.active_admin a,
+body.active_admin a:link,
+body.active_admin a:visited {
+  color: var(--crm-admin-accent);
+}
+
+body.active_admin .button,
+body.active_admin .action_item a,
+body.active_admin input[type="submit"],
+body.active_admin input[type="button"],
+body.active_admin button {
+  background: linear-gradient(135deg, var(--crm-admin-accent-dark), var(--crm-admin-accent));
+  border: 1px solid rgba(109, 47, 21, 0.18);
+  border-radius: 999px;
+  box-shadow: none;
+  color: #fff7ef;
+  text-shadow: none;
+}
+
+body.active_admin .button:hover,
+body.active_admin .action_item a:hover,
+body.active_admin input[type="submit"]:hover,
+body.active_admin input[type="button"]:hover,
+body.active_admin button:hover {
+  background: linear-gradient(135deg, #7d361b, #b55d32);
+}
+
+body.active_admin .filters-form input[type="text"],
+body.active_admin .filters-form input[type="email"],
+body.active_admin .filters-form input[type="number"],
+body.active_admin .filters-form select,
+body.active_admin .filters-form textarea,
+body.active_admin form input[type="text"],
+body.active_admin form input[type="email"],
+body.active_admin form input[type="number"],
+body.active_admin form input[type="password"],
+body.active_admin form input[type="date"],
+body.active_admin form textarea,
+body.active_admin form select {
+  background: #fffdf8;
+  border: 1px solid var(--crm-admin-line);
+  border-radius: 12px;
+  box-shadow: none;
+}
+
+body.active_admin .status_tag {
+  border-radius: 999px;
+  border: 0;
+  box-shadow: none;
+}
+
+body.active_admin .status_tag.yes,
+body.active_admin .status_tag.ok,
+body.active_admin .status_tag.published {
+  background: #2f855a;
+}
+
+body.active_admin .status_tag,
+body.active_admin .status_tag.no {
+  background: #a0aec0;
+}
+
+body.active_admin #dashboard_default_message {
+  background: linear-gradient(135deg, rgba(255, 250, 242, 0.96), rgba(245, 235, 220, 0.88));
+  border: 1px solid rgba(109, 47, 21, 0.12);
+  border-radius: 24px;
+  box-shadow: var(--crm-admin-shadow);
+  color: var(--crm-admin-muted);
+}
+
+body.active_admin .paginated_collection_contents,
+body.active_admin .index_content,
+body.active_admin .main_content {
+  background: transparent;
+  box-shadow: none;
+  border: 0;
+}

@@ -1,13 +1,30 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  full_name: MyString
-  phone_number: MyString
-  email_address: MyString
-  notes: MyText
+alice_zephyr:
+  full_name: Alice Zephyr
+  phone_number: 555-111-2222
+  email_address: alice@example.com
+  notes: Enterprise account
 
-two:
-  full_name: MyString
-  phone_number: MyString
-  email_address: MyString
-  notes: MyText
+brian_carter:
+  full_name: Brian Carter
+  phone_number: 555-222-3333
+  email_address: brian@example.com
+  notes: Prefers phone follow-up
+
+carla_nil_email:
+  full_name: Carla Nguyen
+  phone_number: 555-333-4444
+  notes: Missing email in source spreadsheet
+
+milo_blank_email:
+  full_name: Milo Brooks
+  phone_number: 555-444-5555
+  email_address: ""
+  notes: Asked to update email later
+
+zoe_young:
+  full_name: Zoe Young
+  phone_number: 555-555-6666
+  email_address: zoe@example.com
+  notes: Interested in renewal options

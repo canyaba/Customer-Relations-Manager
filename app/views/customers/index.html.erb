@@ -1,0 +1,19 @@
+<% content_for :title, "All Customers" %>
+
+<section class="customers-page">
+  <header class="customers-hero">
+    <p class="customers-hero__eyebrow">Simple CRM</p>
+    <h1>All Customers</h1>
+    <p>Browse every customer currently stored in the CRM.</p>
+  </header>
+
+  <nav class="customers-nav" aria-label="Customer views">
+    <%= link_to "All Customers", root_path, class: "customers-nav__link customers-nav__link--active" %>
+    <%= link_to "Alphabetized", alphabetized_customers_path, class: "customers-nav__link" %>
+    <%= link_to "Missing Emails", missing_email_customers_path, class: "customers-nav__link" %>
+  </nav>
+
+  <section class="customers-grid">
+    <%= render partial: "customer", collection: @customers %>
+  </section>
+</section>
