@@ -9,7 +9,7 @@ gem "sqlite3", ">= 2.1"
 
 gem "fiddle"
 
-gem "devise", "~> 4.9"
+gem "devise", "~> 5.0"
 
 gem "activeadmin"
 
